@@ -1,50 +1,46 @@
-Facebook SDK with Fluxible
+Google Maps Script with Fluxible
 ==========================
 
-Plug & play facebook SDK for your fluxible application !
+Plug & play google maps script for your fluxible application !
 
 Features
 --------
 
  * Works with webpack / browserify
- * Loads facebook SDK asynchronously (thanks to es6 Promises)
- * Shares configuration between server / client (means you can use environment variables)
+ * Loads Google Maps script asynchronously (thanks to es6 Promises)
  * Comes with a "do whatever you want" (MIT) license
- * Doesn't load SDK on server side
+ * Doesn't load script on server side
 
 Install
 -------
 
 Add the module to your fluxible project :
 
-    npm install --save fluxible-plugin-facebook
+    npm install --save fluxible-plugin-google-maps
 
 Add it to your fluxible context :
 
 ```javascript
 
-import facebookPlugin from 'fluxible-plugin-facebook';
+import googleMapsPlugin from 'fluxible-plugin-google-maps';
 
-app.plug(facebookplugin({
-    /* https://developers.facebook.com/docs/javascript/reference/FB.init/v2.3 options */
-    appId: 'xxx'
-}));
+app.plug(googleMapsPlugin());
 
 ```
 
 Usage
 -----
 
-Add `getFacebookSdk` to the react's context :
+Add `getGoogleMapsScript` to the react's context :
 
 ```
 
 Application = provideContext(Application, {
 
     // ...
-    
-    getFacebookSdk: React.PropTypes.func
-    
+
+    getGoogleMapsScript: React.PropTypes.func
+
 });
 
 ```
@@ -56,13 +52,13 @@ From a component :
 class FooComponent {
 
     static contextTypes = {
-        getFacebookSdk: React.PropTypes.func
+        getGoogleMapsScript: React.PropTypes.func
     };
 
     // ...
 
     plop() {
-        this.context.getFacebookSdk().then(sdk => /* do whatever */);
+        this.context.getGoogleMapsScript().then(google => /* do whatever */);
     }
 
 }

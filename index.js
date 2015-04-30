@@ -1,16 +1,16 @@
 'use strict';
 
-var getSdk = require('./getSdk');
+var getGoogleMapsScript = require('./getGoogleMapsScript');
 
-function facebookPlugin(options) {
+function googleMapsPlugin(options) {
     var options = options;
 
     return {
-        name: 'FacebookPlugin',
+        name: 'googleMapsPlugin',
         plugContext: function () {
             return {
                 plugComponentContext: function (componentContext) {
-                    componentContext.getFacebookSdk = getSdk.bind(null, options);
+                    componentContext.getGoogleMapsScript = getGoogleMapsScript.bind(null, options);
                 }
             };
         },
@@ -23,4 +23,4 @@ function facebookPlugin(options) {
     };
 }
 
-module.exports = facebookPlugin;
+module.exports = googleMapsPlugin;

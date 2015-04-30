@@ -1,23 +1,24 @@
 {
-  "name": "fluxible-plugin-facebook",
+  "name": "fluxible-plugin-google-maps",
   "version": "0.1.0",
-  "description": "Integrate the facebook SDK in your fluxible application",
+  "description": "Integrate the Google Maps Script in your fluxible application",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git@github.com:Hairfie/fluxible-facebook-plugin.git"
+    "url": "git@github.com:Hairfie/fluxible-google-maps-plugin.git"
   },
   "keywords": [
     "fluxible",
-    "facebook"
+    "google",
+    "maps"
   ],
-  "author": "Antoine Hérault <antoine.herault@gmail.com>",
+  "author": "Ghislain de Juvigny <gdjuvigny@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Hairfie/fluxible-facebook-plugin/issues"
+    "url": "https://github.com/Hairfie/fluxible-plugin-google-maps/issues"
   },
-  "homepage": "https://github.com/Hairfie/fluxible-facebook-plugin",
+  "homepage": "https://github.com/Hairfie/fluxible-plugin-google-maps",
   "dependencies": {
     "debug": "^2.1.3",
     "es6-promise": "^2.1.1"
