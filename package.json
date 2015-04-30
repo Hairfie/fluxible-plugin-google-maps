@@ -13,7 +13,14 @@
     "google",
     "maps"
   ],
-  "author": "Ghislain de Juvigny <gdjuvigny@gmail.com>",
+  "author": {
+    "name": "Ghislain de Juvigny",
+    "email": "gdjuvigny@gmail.com"
+  },
+  "contributors": [{
+    "name": "Antoine Hérault",
+    "email": "antoine.herault@gmail.com"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Hairfie/fluxible-plugin-google-maps/issues"
